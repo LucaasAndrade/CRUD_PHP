@@ -70,8 +70,8 @@ try {
                <td> <?php echo $usuario['adm_login'] ?> </td>
                <td> <?php echo $usuario['adm_email'] ?> </td>
                <td> <?php echo ($usuario['adm_ativo'] == '0' ? "<p style='color: red'> Não ativo </p> " : "<p style='color: green'> Ativo </p>") ?> </td>
-               <td> <a href="remover_usuario.php"> Excluir </a></td>
-               <td> <a href="editar_usuario.php"> Editar </a></td>
+               <td> <a href=<?php echo "remover_usuario.php?id=" . $usuario['id']?>> Excluir </a></td>
+               <td> <a href=<?php echo "editar_usuario.php?id=" . $usuario['id']?>> Editar </a></td>
             </tr>
          <?php endforeach; ?>
       </table>
