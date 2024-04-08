@@ -76,6 +76,9 @@ try {
          <?php endforeach; ?>
       </table>
    </div>
+   <a href="listar_usuarios.php"> Voltar à listagem de usuários </a>
+    <br/>
+    <a href="painel_admin.php"> Painel admin </a>
 </body>
 
 </html>
