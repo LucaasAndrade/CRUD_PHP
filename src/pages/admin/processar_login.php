@@ -18,7 +18,7 @@
         
 
         //COMANDO SQL
-        $sql = "SELECT * FROM administrador WHERE adm_login = :login  AND adm_pass = :senha  AND adm_ative = 1";
+        $sql = "SELECT * FROM administrador WHERE adm_login = :login  AND adm_pass = :senha  AND adm_ativo = 1";
         // : LOGIN : SENHA SÃO TRATAMENTOS DE SEGURANÇA PARA ESSAS VARIÁVEIS, EVITANDO SQL INJECTION E AFINS.
         
         $query = $pdo->prepare($sql);
